@@ -1,0 +1,22 @@
+.container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Header Header Header Header"
+      "main main . sidebar"
+      "footer footer footer footer";
+  }
+  
+  .Header { grid-area: Header; 
+background-color: orange; height:200px;}
+  
+  .main { grid-area: main; 
+background-color:skyblue;height:200px;}
+  
+  .sidebar { grid-area: sidebar; background-color:#fa7f72;height:200px;}
+  
+  .footer { grid-area: footer; 
+    background-color: orange;height:200px;}
+  
